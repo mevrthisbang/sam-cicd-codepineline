@@ -32,6 +32,8 @@ Resources:
       AutoPublishAlias: live
       DeploymentPreference:
         Type: Canary10Percent5Minutes
+      Layers:
+        - !Ref DependenciesLayer
       Architectures:
       - x86_64
       Events:
